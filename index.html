@@ -19,7 +19,6 @@
   </head>
   <body>
     <!-- header -->
-
     <header class="header">
       <div class="container header-container">
         <a class="logo" href="./index.html"
@@ -88,6 +87,12 @@
       </div>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <form name="signUpForm">
+            <label>Imię <input type="text" name="userName" /></label>
+            <label>Telefon<input type="tel" name="userPhone" /></label>
+            <label>Email<input type="email" name="userEmail" /></label>
+            <button type="button" class="send-button">Wyślij</button>
+          </form>
           <button
             data-modal-close
             class="modal-close-button"
