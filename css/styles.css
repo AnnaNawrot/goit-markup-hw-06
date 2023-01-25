@@ -737,11 +737,11 @@ button {
   color: #757575;
 }
 
-.label {
+.form-label {
   padding-bottom: 4px;
+  /* position: relative; */
 }
-
-.input {
+.form-input {
   display: block;
   width: 448px;
   height: 40px;
@@ -753,6 +753,30 @@ button {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
+}
+
+.form-icon-name {
+  fill: var(--primary-txt-color);
+  position: absolute;
+  left: 16.67%;
+  right: 16.67%;
+  top: 16.67%;
+  bottom: 16.67%;
+  /* top: 105px;
+  left: 50px; */
+}
+.form-icon-phone {
+  fill: var(--primary-txt-color);
+  position: absolute;
+  top: 175px;
+  left: 50px;
+}
+
+.form-icon-email {
+  fill: var(--primary-txt-color);
+  position: absolute;
+  top: 243px;
+  left: 50px;
 }
 
 textarea {

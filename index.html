@@ -495,49 +495,61 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="form-container">
-          <form name="service-form">
-            <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
-            <ul class="form-list">
-              <li class="form-item">
-                <label class="label"
-                  >Imię<input class="input" type="text" name="userName"
-                /></label>
-              </li>
 
-              <li class="form-item">
-                <label class="label"
-                  >Telefon <input class="input" type="tel" name="userPhone"
-                /></label>
-              </li>
+        <form name="service-form">
+          <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
+          <ul class="form-list">
+            <li class="form-item">
+              <label class="form-label">
+                <span>Imię</span>
+                <svg class="form-icon-name" width="19px" height="19px">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input class="form-input" type="text" name="userName" />
+              </label>
+            </li>
 
-              <li class="form-item">
-                <label class="label"
-                  >Email<input class="input" type="email" name="userEmail"
-                /></label>
-              </li>
-              <li class="form-item">
-                <label class="label"
-                  >Komentarz<textarea
-                    name="comment"
-                    rows="8"
-                    placeholder="Wprowadź tekst"
-                  ></textarea>
-                </label>
-              </li>
-            </ul>
-            <div class="statement">
-              <input type="checkbox" name="statement-box" checked />
-              <p class="txt">
-                Oświadczam iż akceptuję
-                <a href="x" class="rules">Regulamin i Politykę Prywatności.</a>
-              </p>
-            </div>
-            <button type="submit" class="send-button">Wyślij</button>
-          </form>
-        </div>
+            <li class="form-item">
+              <label class="form-label">
+                <span>Telefon</span>
+                <svg class="form-icon-phone" width="17px" height="17px">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+
+                <input class="form-input" type="email" name="userEmail"
+              /></label>
+            </li>
+            <li class="form-item">
+              <label class="form-label">
+                <span>Email</span>
+                <svg class="form-icon-email" width="17px" height="14px">
+                  <use href="./images/icons.svg#icon-email-form"></use>
+                </svg>
+                <input class="form-input" type="email" name="userEmail" />
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="form-label"
+                >Komentarz<textarea
+                  name="comment"
+                  rows="8"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+              </label>
+            </li>
+          </ul>
+          <div class="statement">
+            <input type="checkbox" name="statement-box" checked />
+            <p class="txt">
+              Oświadczam iż akceptuję
+              <a href="x" class="rules">Regulamin i Politykę Prywatności.</a>
+            </p>
+          </div>
+          <button type="submit" class="send-button">Wyślij</button>
+        </form>
       </div>
     </div>
+
     <script src="js/modal.js"></script>
   </body>
 </html>
