@@ -19,6 +19,7 @@
   </head>
   <body>
     <!-- header -->
+
     <header class="header">
       <div class="container header-container">
         <a class="logo" href="./index.html"
@@ -85,26 +86,7 @@
           Zamów usługę
         </button>
       </div>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <form name="signUpForm">
-            <label>Imię <input type="text" name="userName" /></label>
-            <label>Telefon<input type="tel" name="userPhone" /></label>
-            <label>Email<input type="email" name="userEmail" /></label>
-            <button type="button" class="send-button">Wyślij</button>
-          </form>
-          <button
-            data-modal-close
-            class="modal-close-button"
-            type="button"
-            href="#"
-          >
-            <svg class="icon-close" width="11px" height="11px">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
+
       <!-- main section -->
       <section class="section">
         <div class="container">
@@ -501,6 +483,61 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button
+          data-modal-close
+          class="modal-close-button"
+          type="button"
+          href="#"
+        >
+          <svg class="icon-close" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="form-container">
+          <form name="service-form">
+            <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
+            <ul class="form-list">
+              <li class="form-item">
+                <label class="label"
+                  >Imię<input class="input" type="text" name="userName"
+                /></label>
+              </li>
+
+              <li class="form-item">
+                <label class="label"
+                  >Telefon <input class="input" type="tel" name="userPhone"
+                /></label>
+              </li>
+
+              <li class="form-item">
+                <label class="label"
+                  >Email<input class="input" type="email" name="userEmail"
+                /></label>
+              </li>
+              <li class="form-item">
+                <label class="label"
+                  >Komentarz<textarea
+                    name="comment"
+                    rows="8"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                </label>
+              </li>
+            </ul>
+            <div class="statement">
+              <input type="checkbox" name="statement-box" checked />
+              <p class="txt">
+                Oświadczam iż akceptuję
+                <a href="x" class="rules">Regulamin i Politykę Prywatności.</a>
+              </p>
+            </div>
+            <button type="submit" class="send-button">Wyślij</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/modal.js"></script>
   </body>
 </html>
