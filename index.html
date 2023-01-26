@@ -127,23 +127,35 @@
               </li>
 
               <li class="form-item">
-                <label class="form-label-txtarea"
-                  >Komentarz<textarea
-                    name="comment"
-                    rows="8"
-                    placeholder="Wprowadź tekst"
-                  ></textarea>
-                </label>
+                <label class="form-label-txtarea">Komentarz</label>
+                <textarea
+                  name="comment"
+                  rows="8"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
               </li>
+
+              <div class="statement">
+                <input
+                  type="checkbox"
+                  name="statement-box"
+                  id="checkbox-input"
+                  value="true"
+                  checked
+                />
+                <label for="checkbox-input" class="statement-label">
+                  <svg class="checkmark" width="13px" height="13px">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                  <span class="txt">
+                    Oświadczam iż akceptuję
+                    <a href="x" class="rules">Regulamin </a>i
+                    <a href="x" class="rules">Politykę Prywatności.</a></span
+                  >
+                </label>
+              </div>
+              <button type="submit" class="send-button">Wyślij</button>
             </ul>
-            <div class="statement">
-              <input type="checkbox" name="statement-box" />
-              <p class="txt">
-                Oświadczam iż akceptuję
-                <a href="x" class="rules">Regulamin i Politykę Prywatności.</a>
-              </p>
-            </div>
-            <button type="submit" class="send-button">Wyślij</button>
           </form>
         </div>
       </div>
