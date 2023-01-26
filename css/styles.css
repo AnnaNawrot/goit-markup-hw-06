@@ -814,8 +814,14 @@ textarea {
   cursor: pointer;
   border-style: none;
   border-radius: 4px;
-  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: auto 164px 40px 164px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.send-button:focus,
+.send-button:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .statement {
