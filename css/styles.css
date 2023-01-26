@@ -642,6 +642,22 @@ button {
 /* MODAL hw-05 */
 
 /* dark layer */
+.backdrop {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  scale: 1;
+  opacity: 1;
+  transition: transform, scale, opacity;
+  transition-duration: 200ms;
+}
 
 /* modal, czyli wyskakujące okienko z formularzem */
 .modal {
