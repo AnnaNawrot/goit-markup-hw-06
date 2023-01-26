@@ -55,27 +55,9 @@
             </a>
           </li>
         </ul>
-
-        <!-- <ul class="header-contacts">
-          <li>
-            <a class="contact-link" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a class="contact-link" href="tel:+48111111111">
-              <svg class="contact-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111
-            </a>
-          </li>
-        </ul> -->
       </div>
     </header>
+
     <main>
       <!-- HERO -->
       <div class="hero">
@@ -85,6 +67,85 @@
         <button data-modal-open type="button" class="hero-button">
           Zamów usługę
         </button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button
+            data-modal-close
+            class="modal-close-button"
+            type="button"
+            href="#"
+          >
+            <svg class="icon-close" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <form name="service-form">
+            <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
+            <ul class="form-list">
+              <li class="form-item">
+                <label class="form-label">Imię</label>
+                <div class="item-container">
+                  <input class="form-input" type="text" name="userName" />
+                  <svg
+                    class="form-icon form-icon-name"
+                    width="23px"
+                    height="23px"
+                  >
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </div>
+              </li>
+
+              <li class="form-item">
+                <label class="form-label">Telefon</label>
+                <div class="item-container">
+                  <input class="form-input" type="email" name="userEmail" />
+                  <svg
+                    class="form-icon form-icon-phone"
+                    width="18px"
+                    height="18px"
+                  >
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </li>
+
+              <li class="form-item">
+                <label class="form-label">Email</label>
+                <div class="item-container">
+                  <input class="form-input" type="email" name="userEmail" />
+                  <svg
+                    class="form-icon form-icon-email"
+                    width="22px"
+                    height="19px"
+                  >
+                    <use href="./images/icons.svg#icon-email-form"></use>
+                  </svg>
+                </div>
+              </li>
+
+              <li class="form-item">
+                <label class="form-label-txtarea"
+                  >Komentarz<textarea
+                    name="comment"
+                    rows="8"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                </label>
+              </li>
+            </ul>
+            <div class="statement">
+              <input type="checkbox" name="statement-box" />
+              <p class="txt">
+                Oświadczam iż akceptuję
+                <a href="x" class="rules">Regulamin i Politykę Prywatności.</a>
+              </p>
+            </div>
+            <button type="submit" class="send-button">Wyślij</button>
+          </form>
+        </div>
       </div>
 
       <!-- main section -->
@@ -483,105 +544,6 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button
-          data-modal-close
-          class="modal-close-button"
-          type="button"
-          href="#"
-        >
-          <svg class="icon-close" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <form name="service-form">
-          <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
-          <ul class="form-list">
-            <!-- <li class="form-item">
-              <label class="form-label">
-                <span>Imię</span>
-                <svg class="form-icon-name" width="19px" height="19px">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-                <input class="form-input" type="text" name="userName" />
-              </label>
-            </li> -->
-            <li class="form-item">
-              <label class="form-label">Imię</label>
-              <div class="item-container">
-                <input class="form-input" type="text" name="userName" />
-                <svg
-                  class="form-icon form-icon-name"
-                  width="19px"
-                  height="19px"
-                >
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </li>
-
-            <!-- <li class="form-item">
-              <label class="form-label">
-                <span>Telefon</span>
-                <svg class="form-icon-phone" width="17px" height="17px">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-
-                <input class="form-input" type="email" name="userEmail"
-              /></label>
-            </li> -->
-
-            <li class="form-item">
-              <label class="form-label">Telefon</label>
-              <div class="item-container">
-                <input class="form-input" type="email" name="userEmail" />
-                <svg
-                  class="form-icon form-icon-phone"
-                  width="17px"
-                  height="17px"
-                >
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </li>
-
-            <li class="form-item">
-              <label class="form-label">Email</label>
-              <div class="item-container">
-                <input class="form-input" type="email" name="userEmail" />
-                <svg
-                  class="form-icon form-icon-email"
-                  width="17px"
-                  height="14px"
-                >
-                  <use href="./images/icons.svg#icon-email-form"></use>
-                </svg>
-              </div>
-            </li>
-
-            <li class="form-item">
-              <label class="form-label-txtarea"
-                >Komentarz<textarea
-                  name="comment"
-                  rows="8"
-                  placeholder="Wprowadź tekst"
-                ></textarea>
-              </label>
-            </li>
-          </ul>
-          <div class="statement">
-            <input type="checkbox" name="statement-box" checked />
-            <p class="txt">
-              Oświadczam iż akceptuję
-              <a href="x" class="rules">Regulamin i Politykę Prywatności.</a>
-            </p>
-          </div>
-          <button type="submit" class="send-button">Wyślij</button>
-        </form>
-      </div>
-    </div>
 
     <script src="js/modal.js"></script>
   </body>
