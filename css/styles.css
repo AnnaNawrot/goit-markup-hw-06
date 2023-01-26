@@ -701,13 +701,7 @@ button {
   transform: scale(1.1);
 }
 
-/* .form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}  */
+/* FORM */
 
 .form-title {
   font-family: "Roboto";
@@ -741,6 +735,7 @@ button {
   padding-bottom: 4px;
   /* position: relative; */
 }
+
 .form-input {
   display: block;
   width: 448px;
@@ -755,29 +750,46 @@ button {
   padding-left: 42px;
 }
 
-.form-icon-name {
-  fill: var(--primary-txt-color);
-  position: absolute;
-  left: 16.67%;
-  right: 16.67%;
-  top: 16.67%;
-  bottom: 16.67%;
-  /* top: 105px;
-  left: 50px; */
+/* .item-container:hover > svg,
+.item-container:hover > input,
+.form-label-txtarea:hover > textarea {
+  border-color: #2196f3;
+  fill: #2196f3;
+} */
+
+.item-container:hover > svg,
+.item-container:hover > input,
+.form-label-txtarea:hover > textarea {
+  border-color: #2196f3;
+  fill: #2196f3;
+  color: #2196f3;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-icon-phone {
+
+.form-icon {
   fill: var(--primary-txt-color);
   position: absolute;
+}
+
+.form-icon-name {
+  top: 105px;
+  left: 55px;
+}
+
+.form-icon-phone {
   top: 175px;
-  left: 50px;
+  left: 55px;
 }
 
 .form-icon-email {
-  fill: var(--primary-txt-color);
-  position: absolute;
   top: 243px;
-  left: 50px;
+  left: 55px;
 }
+
+/* .project-card:hover .overlay,
+.project-card:focus .overlay {
+  transform: translateY(0);
+} */
 
 textarea {
   width: 448px;
