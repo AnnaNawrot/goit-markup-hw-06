@@ -687,6 +687,14 @@ button {
 
 /* FORM */
 
+/* .modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+} */
+
 .form-title {
   font-weight: 700;
   font-size: 20px;
@@ -715,7 +723,6 @@ button {
 
 .form-label {
   padding-bottom: 4px;
-  /* position: relative; */
 }
 
 .form-input {
