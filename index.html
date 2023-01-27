@@ -70,14 +70,9 @@
       </div>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button
-            data-modal-close
-            class="modal-close-button"
-            type="button"
-            href="#"
-          >
+          <button data-modal-close class="modal-close-button" type="button">
             <svg class="icon-close" width="18px" height="18px">
-              <use href="./images/icons.svg#icon-close"></use>
+              <use href="./images/icons.svg#icon-form-close"></use>
             </svg>
           </button>
 
@@ -87,64 +82,50 @@
               <li class="form-item">
                 <label for="user-name" class="form-label">Imię</label>
                 <div class="item-container">
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-form-person"></use>
+                  </svg>
                   <input
                     id="user-name"
                     type="text"
                     name="userName"
                     class="form-input"
                   />
-                  <svg
-                    class="form-icon form-icon-name"
-                    width="23px"
-                    height="23px"
-                  >
-                    <use href="./images/icons.svg#icon-person"></use>
-                  </svg>
                 </div>
               </li>
 
               <li class="form-item">
                 <label for="user-phone" class="form-label">Telefon</label>
                 <div class="item-container">
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-form-phone"></use>
+                  </svg>
                   <input
                     id="user-phone"
-                    type="email"
+                    type="tel"
                     name="userPhone"
                     class="form-input"
                   />
-                  <svg
-                    class="form-icon form-icon-phone"
-                    width="18px"
-                    height="18px"
-                  >
-                    <use href="./images/icons.svg#icon-phone"></use>
-                  </svg>
                 </div>
               </li>
 
               <li class="form-item">
                 <label for="user-email" class="form-label">Email</label>
                 <div class="item-container">
+                  <svg class="form-icon" width="18px" height="18px">
+                    <use href="./images/icons.svg#icon-form-email"></use>
+                  </svg>
                   <input
                     id="user-email"
                     type="email"
                     name="userEmail"
                     class="form-input"
                   />
-                  <svg
-                    class="form-icon form-icon-email"
-                    width="22px"
-                    height="19px"
-                  >
-                    <use href="./images/icons.svg#icon-email-form"></use>
-                  </svg>
                 </div>
               </li>
 
               <li class="form-item">
-                <label for="comment" class="form-label-txtarea"
-                  >Komentarz</label
-                >
+                <label for="comment">Komentarz</label>
                 <textarea
                   id="comment"
                   name="comment"
@@ -153,7 +134,7 @@
                 ></textarea>
               </li>
 
-              <div class="statement">
+              <li class="statement">
                 <input
                   id="checkbox-input"
                   type="checkbox"
@@ -162,17 +143,17 @@
                 />
                 <label for="checkbox-input" class="statement-label">
                   <svg class="checkmark" width="13px" height="13px">
-                    <use href="./images/icons.svg#icon-Vector"></use>
+                    <use href="./images/icons.svg#icon-checkmark"></use>
                   </svg>
                   <span class="txt">
                     Oświadczam iż akceptuję
-                    <a href="x" class="rules">Regulamin </a>i
+                    <a href="x" class="rules">Regulamin</a> i
                     <a href="x" class="rules">Politykę Prywatności.</a></span
                   >
                 </label>
-              </div>
-              <button type="submit" class="send-button">Wyślij</button>
+              </li>
             </ul>
+            <button type="submit" class="send-button">Wyślij</button>
           </form>
         </div>
       </div>
@@ -568,6 +549,27 @@
                   <use href="./images/icons.svg#icon-linkedin-4"></use>
                 </svg>
               </a>
+            </li>
+          </ul>
+        </div>
+        <div class="third-footer-container">
+          <h3 class="cta">Zapisz się do newslettera</h3>
+          <ul class="subscription-container">
+            <li>
+              <input
+                type="email"
+                name="userEmail"
+                class="email-input"
+                placeholder="E-mail"
+              />
+            </li>
+            <li>
+              <button type="button" class="subscribe-button">
+                <span>Zapisz się</span>
+                <svg class="footer-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
             </li>
           </ul>
         </div>

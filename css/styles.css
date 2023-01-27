@@ -410,7 +410,13 @@ img {
 
 .secondary-footer-container {
   padding-top: 12px;
+  margin-right: 70px;
 }
+
+.third-footer-container {
+  padding-top: 12px;
+}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -470,6 +476,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-txt-color);
+  margin-bottom: 20px;
 }
 
 .social-list-foot {
@@ -503,6 +510,66 @@ img {
 .social-link-foot:active {
   background-color: var(--brand-color);
   fill: var(--primary-bg-color);
+}
+
+.subscription-container {
+  display: flex;
+}
+
+.email-input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  background-color: var(--secondary-bg-color);
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  margin-right: 12px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-input:focus {
+  border-color: var(--brand-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--brand-color);
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-txt-color);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus,
+.subscribe-button:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-icon {
+  fill: var(--primary-bg-color);
+  margin-right: 28px;
+  margin-left: 24px;
 }
 
 /* Portfolio */
@@ -737,52 +804,37 @@ button {
   color: var(--secondary-txt-color);
 }
 
-.form-label {
-  padding-bottom: 4px;
-}
-
-.form-input {
-  display: block;
+.item-container {
   width: 448px;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 10px;
+}
+.form-icon {
+  position: absolute;
+  z-index: 1;
+  fill: var(--primary-txt-color);
+  transform: translateY(60%);
+  margin-left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
   outline: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
   padding-left: 42px;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  position: relative;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-container:focus-within > svg,
 .item-container:focus-within > input,
-.form-label-txtarea:focus-within > textarea {
+.form-item:focus-within > textarea {
   border-color: var(--brand-color);
   fill: var(--brand-color);
-  color: var(--brand-color);
-}
-
-.form-icon {
-  fill: var(--primary-txt-color);
-  position: absolute;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-.form-icon-name {
-  top: 105px;
-  left: 50px;
-}
-
-.form-icon-phone {
-  top: 173px;
-  left: 52px;
-}
-
-.form-icon-email {
-  top: 240px;
-  left: 52px;
 }
 
 textarea {
@@ -798,7 +850,7 @@ textarea {
   align-items: center;
   padding: 12px 16px;
   resize: none;
-  /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-button {
@@ -840,18 +892,13 @@ textarea {
   margin-left: 9px;
 }
 
-.rules {
-  color: var(--brand-color);
-  text-decoration: underline;
-}
-
 /* CHECKBOX */
 
 .checkmark {
   fill: var(--primary-bg-color);
   position: absolute;
   pointer-events: none;
-  top: 6px;
+  top: 5px;
   left: -12px;
 }
 
@@ -869,7 +916,7 @@ textarea {
   display: block;
   position: absolute;
   left: -13px;
-  top: 4px;
+  top: 3px;
   content: "";
   width: 15px;
   height: 16px;
@@ -882,4 +929,9 @@ textarea {
 .statement input:checked + .statement-label::before {
   background-color: var(--brand-color);
   border-color: var(--brand-color);
+}
+
+.rules {
+  color: var(--brand-color);
+  text-decoration: underline;
 }
