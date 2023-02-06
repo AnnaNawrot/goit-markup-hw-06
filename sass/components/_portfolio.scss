@@ -1,0 +1,95 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &_button {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-style: none;
+    background: var(--third-bg-color);
+    border-radius: 4px;
+    padding: 6px 22px 6px 22px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      background: var(--brand-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      color: var(--third-txt-color);
+      border-style: none;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+  width: 1200px;
+
+  &__item {
+    width: 370px;
+    border: 1px solid #eeeeee;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      &:hover .overlay__txt,
+      &:focus .overlay__txt {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  .project-description {
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    width: 370px;
+  }
+
+  .project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    padding: 20px 24px 4px 24px;
+  }
+
+  .project-type {
+    font-size: 16px;
+    line-height: 1 9;
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-color);
+    padding: 0 24px 20px 24px;
+  }
+
+  .overlay__txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.31;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: var(--third-txt-color);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 49px 45px 49px 24px;
+  }
+}

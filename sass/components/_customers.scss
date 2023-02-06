@@ -1,0 +1,29 @@
+.customers {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 1170px;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-bg-color);
+    border-radius: 4px;
+    background-color: var(--primary-bg-color);
+    fill: var(--icons-bg-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--primary-bg-color);
+      fill: var(--brand-color);
+      border: 1px solid var(--brand-color);
+    }
+  }
+}

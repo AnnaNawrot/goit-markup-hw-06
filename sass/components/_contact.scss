@@ -1,0 +1,35 @@
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1 1;
+    letter-spacing: 0.02em;
+    color: var(--secondary-txt-color);
+    fill: var(--secondary-txt-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--brand-color);
+      fill: var(--brand-color);
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    padding-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
